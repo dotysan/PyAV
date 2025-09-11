@@ -6,11 +6,7 @@ PYAV_PIP ?= pip
 PYTHON := $(PYAV_PYTHON)
 PIP := $(PYAV_PIP)
 
-
 .PHONY: default build clean fate-suite lint test
-
-default: build
-
 
 build:
 	$(PIP) install -U --pre cython setuptools
