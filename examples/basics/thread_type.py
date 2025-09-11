@@ -1,5 +1,11 @@
+#! /usr/bin/env -S uv run --script --managed-python --python=3.13
+
+# stdlib
 import time
 
+# /// script
+# dependencies = [ "av" ]
+# ///
 import av
 import av.datasets
 
@@ -18,7 +24,6 @@ for packet in container.demux():
 default_time = time.time() - start_time
 container.close()
 
-
 print("Decoding with auto threading...")
 
 container = av.open(
@@ -36,7 +41,6 @@ for packet in container.demux():
 
 auto_time = time.time() - start_time
 container.close()
-
 
 print("Decoded with default threading in {:.2f}s.".format(default_time))
 print("Decoded with auto threading in {:.2f}s.".format(auto_time))

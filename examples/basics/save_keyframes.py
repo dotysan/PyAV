@@ -1,3 +1,8 @@
+#! /usr/bin/env -S uv run --script --managed-python --python=3.13
+
+# /// script
+# dependencies = [ "av" ]
+# ///
 import av
 import av.datasets
 
