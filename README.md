@@ -53,6 +53,7 @@ Here's how to build PyAV from source. You must use [MSYS2](https://www.msys2.org
 ```bash
 git clone https://github.com/PyAV-Org/PyAV.git
 cd PyAV
+# TODO: is this really needed?!>
 source scripts/activate.sh
 
 # Build ffmpeg from source. You can skip this step
@@ -61,9 +62,13 @@ source scripts/activate.sh
 
 # Build PyAV
 make
+# Or if your prefer `uv`.
+make PIP='uv pip'
 
 # Testing
 make test
+# Or
+make test PIP='uv pip'
 
 # Install globally
 deactivate
