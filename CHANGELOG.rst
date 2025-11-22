@@ -16,18 +16,33 @@ We are operating with `semantic versioning <https://semver.org>`_.
     Note that they these tags will not actually close the issue/PR until they
     are merged into the "default" branch.
 
-v16.0.0
+v16.0.1
 -------
-(unreleased)
-
-Major:
-- Drop Python 3.9, Support Python 3.14.
-
-Features:
-- Declare free-threaded support and support 3.13t by :gh-user:`ngoldbaum` in (:pr:`2005`).
-- Add ``Filter.Context.process_command()`` method by :gh-user:`caffeinism` in (:pr:`2000`).
 
 Fixes:
+
+- Add new hwaccel enums by :gh-user:`WyattBlue` in (:pr:`2030`).
+
+v16.0.0
+-------
+
+Major:
+
+- Drop Python 3.9, Support Python 3.14.
+- Drop support for i686 Linux.
+
+Features:
+
+- Add ``Filter.Context.process_command()`` method by :gh-user:`caffeinism` in (:pr:`2000`).
+- Add packet side-data handling mechanism by :gh-user:`tikuma-lsuhsc ` in (:pr:`2003`).
+- Implemented set_chapters method by :gh-user:`DE-AI` in (:pr:`2004`).
+- Declare free-threaded support and support 3.13t by :gh-user:`ngoldbaum` in (:pr:`2005`).
+- Add writable and copyable attachment and data streams by :gh-user:`skeskinen` in (:pr:`2026`).
+
+Fixes:
+
+- Declare free-threaded support and support 3.13t by :gh-user:`ngoldbaum` in (:pr:`2005`).
+- Allow ``None`` in ``FilterContext.push()`` type stub by :gh-user:`velsinki` in (:pr:`2015`).
 - Fix typos
 
 v15.1.0
